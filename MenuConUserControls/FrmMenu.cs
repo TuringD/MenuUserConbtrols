@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MenuConUserControls.UsersControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,15 @@ namespace MenuConUserControls
         public FrmMenu()
         {
             InitializeComponent();
+        }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            TitleBarControl TTb = new TitleBarControl()
+            {
+                FrmMenu = this
+            };
+            TTb.AddTitleBar();
         }
     }
 }

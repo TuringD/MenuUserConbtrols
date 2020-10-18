@@ -66,7 +66,6 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
-           
             // 
             // label2
             // 
